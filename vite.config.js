@@ -11,6 +11,7 @@ export default defineConfig({
         main: resolve(__dirname, "src/index.html"),
         cart: resolve(__dirname, "src/cart/index.html"),
         checkout: resolve(__dirname, "src/checkout/index.html"),
+<<<<<<< HEAD
         product1: resolve(
           __dirname,
           "src/product_pages/cedar-ridge-rimrock-2.html",
@@ -28,3 +29,10 @@ export default defineConfig({
     },
   },
 });
+=======
+        // The problematic 'product' entry is removed here.
+      },
+    },
+  },
+});
+>>>>>>> ced6c0f (Complete individual work submission - all modifications from personal repository)

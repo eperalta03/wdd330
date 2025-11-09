@@ -25,4 +25,8 @@ function cartItemTemplate(item) {
   return newItem;
 }
 
+<<<<<<< HEAD
 renderCartContents();
+=======
+renderCartContents();
+>>>>>>> ced6c0f (Complete individual work submission - all modifications from personal repository)
