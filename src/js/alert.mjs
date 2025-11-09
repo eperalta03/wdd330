@@ -1,7 +1,7 @@
 import { getJSON } from "./utils.mjs";
 
 function alertTemplate(alert) {
-    return `p style="bakcground:${alert.background}; color:${alert.color}; padding:10px; text-align:center; margin:0;">${alert.message}</p>`;
+   return `<p style="background:${alert.background}; color:${alert.color}; padding:10px; text-align:center; margin:0;">${alert.message}</p>`;
 }
 
 export default class Alert {
@@ -16,10 +16,8 @@ export default class Alert {
     
     if (alerts && alerts.length > 0) {
         this.renderAlerts(alerts);
-    }
-}
-}
-renderAlerts(alerts);{
+    }}
+    renderAlerts(alerts){ 
     const alertSection = document.createElement('section');
     alertSection.className = 'alert-list';
 
@@ -28,3 +26,5 @@ renderAlerts(alerts);{
 
     this.parentElement.prepend(alertSection);
 }
+}
+
