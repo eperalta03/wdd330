@@ -23,6 +23,15 @@
 ---
 _BYU-Pathway Worldwide improves lives through access to spiritually based, online affordable higher education. Its mission is to develop disciples of Jesus Christ who are leaders in their homes, the Church, and their communities._
 
+<<<<<<< HEAD
 ## Live Site
 https://sprightly-heliotrope-6d3487.netlify.app/
 
+=======
+PERMALINK:
+
+## 🚀 Live Production Site
+
+You can view the live, production version of this site on Netlify at:
+[Inquisitive Sherbet Live Site](https://6902d7253b4df4cd018b08c4--inquisitive-sherbet-52cab1.netlify.app/)
+>>>>>>> ced6c0f (Complete individual work submission - all modifications from personal repository)
