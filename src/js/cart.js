@@ -28,7 +28,7 @@ function cartItemTemplate(item) {
 
 function cartItemTotalCost(cartItems) {
   let total = 0;
-  cartItems.forEach(item => {
+  cartItems.forEach((item) => {
     let cost = parseFloat(item.FinalPrice);
     total = total + cost;
   });

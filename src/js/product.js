@@ -1,4 +1,4 @@
-import{ getParam } from "./utils.mjs";
+import { getParam, getLocalStorage, setLocalStorage } from "./utils.mjs";
 import ProductData from "./ProductData.mjs";
 import ProductDetails from "./ProductDetails.mjs";
 
@@ -8,9 +8,9 @@ const productId = getParam("product");
 const product = new ProductDetails(productId, dataSource);
 product.init();
 
-console.log(dataSource.findProductById(productId));
+//console.log(dataSource.findProductById(productId));
 
-function addProductToCart(product) {
+function addProductToCart(item) {
   let cartItems = getLocalStorage("so-cart") || [];
 
   if (!Array.isArray(cartItems)) {
