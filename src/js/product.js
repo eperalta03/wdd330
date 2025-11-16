@@ -17,9 +17,17 @@ function addProductToCart(item) {
     cartItems = [];
   }
 
-  cartItems.push(product);
+  cartItems.push(item);
   setLocalStorage("so-cart", cartItems);
 }
+
+function addToCartHandler() {
+  addProductToCart(product.product);
+}
+
+document
+  .querySelector("#addToCart")
+  .addEventListener("click", addToCartHandler);
 
 // add to cart button event handler
 //async function addToCartHandler(e) {
