@@ -1,9 +1,10 @@
 import ProductData from "./ProductData.mjs";
-const productDataInstance = new ProductData();
-
 import ProductList from "./ProductList.mjs";
-const productListInstance = new ProductList();
 
-import Alert from "./alert.mjs";
-const alerts = new Alert();
-alerts.init();
+const dataSource = new ProductData("/json/tents");
+
+const element = document.querySelector(".product-list");
+
+const productList = new ProductList("Tents", dataSource, element);
+
+productList.init();

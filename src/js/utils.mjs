@@ -7,7 +7,13 @@ export function qs(selector, parent = document) {
 
 // retrieve data from localstorage
 export function getLocalStorage(key) {
-  return JSON.parse(localStorage.getItem(key));
+  try {
+    const data = localStorage.getItem(key);
+    return data ? JSON.parse(data) : [];
+  } catch (e) {
+    console.error("Error parsing localStorage data", e);
+    return [];
+  }
 }
 // save data to local storage
 export function setLocalStorage(key, data) {
@@ -22,7 +28,6 @@ export function setClick(selector, callback) {
   qs(selector).addEventListener("click", callback);
 }
 
-// get the product id from the query string
 export function getParam(param) {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -37,13 +42,4 @@ export function renderListWithTemplate(template, parentElement, list, position =
     parentElement.innerHTML = "";
   }
   parentElement.insertAdjacentHTML(position, htmlStrings.join(""));
-}
-
-export async function getJSON(url) {
-  const response = await fetch(url);
-  if (response.ok) {
-    return response.json();  
-  } else{
-    throw new Error('Bad Response from' + url);
-  }
 }
