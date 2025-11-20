@@ -40,3 +40,4 @@ function cartItemTotalCost(cartItems) {
 }
 
 renderCartContents();
+
