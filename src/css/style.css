@@ -261,3 +261,28 @@ footer {
   font-size: var(--small-font);
   padding: 1em;
 }
+
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: between;
+    align-items: center;
+    position: relative;
+}
+
+.alert .close-btn {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 0 10px;
+}
+
+.alert .close-btn:hover {
+    color: #000;
+}
