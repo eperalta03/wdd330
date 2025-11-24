@@ -90,7 +90,7 @@ p {
   margin-top: -1.3em;
 }
 
-.logo--square > div {
+.logo--square>div {
   margin-top: -1.7em;
 }
 
@@ -255,20 +255,6 @@ button {
     font-size: inherit;
     grid-template-columns: 150px auto 15%;
   }
-}
-
-.cart_footer {
-  display: none;
-}
-
-.cart_footer_show {
-  display: block;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.cart_footer_show h3 {
-  grid-column: 2/3;
 }
 
 footer {
