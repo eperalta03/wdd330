@@ -149,13 +149,12 @@ footer {
     margin: 20px 0;
     border-radius: 6px;
 }
-.chart{
-    margin-bottom: 5rem;
-}
+
 .chart-container {
     height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-style: italic;
+    margin-bottom: 5rem;
 }
