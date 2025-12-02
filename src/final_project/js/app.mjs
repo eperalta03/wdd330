@@ -1,4 +1,4 @@
-import { getExchangeRate } from './exchangeRateFetcher.mjs';
+import { getExchangeRate, getCurrencyList } from './exchangeRateFetcher.mjs';
 import { getMexicoCityTime } from './worldClock.mjs';
 import { convertUSDToMXN, formatCurrency } from './currencyConverter.mjs';
 import { drawSimpleChart } from './historicalChart.mjs';
@@ -11,6 +11,7 @@ async function initApp() {
     await updateExchangeRate();
     await updateMexicoTime();
     await updateHistoricalChart();
+    await multipleCurrencies()
     setupEventListeners();
 }
 
@@ -135,3 +136,20 @@ setInterval(async () => {
     await updateMexicoTime();
     await updateHistoricalChart();
 }, 60000);
+
+async function multipleCurrencies(){
+    try{
+        const currencyList = await getCurrencyList();
+        console.log('Processing multiple currencies:', currencyList);
+
+        if(currencyList.length > 0){
+            console.log('Currency properties:', Object.keys(currencyList[0]));
+         }else{
+            console.log('No currencies found in the list.');
+         }
+        
+        console.log('Total number of currencies:', currencyList.length);}
+        catch (error){
+            console.error('Error processing multiple currencies:', error);
+    }
+}

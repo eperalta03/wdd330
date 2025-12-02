@@ -100,6 +100,22 @@ footer {
     width: 150px;
     text-align: center;
 }
+
+#usd-amount:focus {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    border-color: #2E8B57;
+}
+
+.chart-point{
+    transition: r 0.3s ease, fill 0.3s ease;
+}
+
+.chart-point:hover {
+    r: 6;
+    fill: #1a5c38;
+}
+
 .currency-symbol, .currency-code{
     font-size: 1.2em;
     font-weight: bold;
@@ -109,9 +125,11 @@ footer {
     font-size: 1.5em;
     font-weight: bold;
 }
+
 .result p{
     margin: 12px 0;
 }
+
 #mxn-result{
     font-weight: bold;
 }
@@ -127,6 +145,7 @@ footer {
     margin: 20px 0;
     border-radius: 6px;
 }
+
 .chart-container{
     height: 150px;
     display: flex;
