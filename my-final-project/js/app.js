@@ -4,7 +4,7 @@ const fromInput = document.getElementById("fromValue");
 const toInput = document.getElementById("toValue");
 const convertBtn = document.getElementById("convertBtn");
 
-// MOBILE BUTTONS (do nothing yet for Week 5)
+// MOBILE BUTTONS
 document.getElementById("savedTripsBtnMobile").addEventListener("click", () => {
     alert("Saved Trips coming in Week 6!");
 });
